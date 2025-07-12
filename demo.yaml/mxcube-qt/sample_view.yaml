@@ -1,0 +1,7 @@
+%YAML 1.2
+---
+class: QtGraphicsManager.QtGraphicsManager
+configuration:
+  hide_grid_threshold: 5
+objects:
+  camera: camera.yaml
