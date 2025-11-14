@@ -64,7 +64,7 @@ task:
         # from preliminary XDS calculation
         # When init_spot_dir is set, strategy must be the name of the strategy
         # (specified in strategylib.nml) that was actually used for characterisation.
-        strategy: “Char_6_5_multitrigger”
+        strategy: "Char_6_5_multitrigger"
         # Optional: Arithmetic crystal classes expected for the symmetry.
         # Will be used to select a matching indexing solution,
         # and to determine acquisition strategy.
@@ -83,7 +83,7 @@ task:
       # be left empty so the default is used.
       - resolution: 1.7  # (Å) Optional. Defaults to current value,
         # or to diffraction plan aimed_resolution
-        energies: (12.4,)  # tuple(keV) List of energies to use in experiment.
+        energies: [12.4]  # list(keV) List of energies to use in experiment.
         # two or three for MAD (only).
         # First wavelength will be used for calculating strategies, dose budget, etc.
         # Optional, except for MAD - will default to current beamline energy.
@@ -114,7 +114,7 @@ task:
           # maximum_chi is automatically reduced to match kappa motor limits.
           maximum_chi: 48.0  # (°) Optional. Maximum chi value allowed for strategies.
           # Default 48
-          angular tolerance: 1.0  # (°) Optional.
+          angular_tolerance: 1.0  # (°) Optional.
           # Tolerance to distinguish strategy orientations
 
 # Other parameters are set (ultimately) from ISPyB. These are all optional:
